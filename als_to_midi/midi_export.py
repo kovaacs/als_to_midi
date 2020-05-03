@@ -171,3 +171,8 @@ def midi_export(live_set: models.LiveSet, midi_file_path: str,
     with open(midi_file_path, 'wb+') as bin_file:
         my_midi.writeFile(bin_file)
     print('Midi Export Done')
+
+
+def main(als_file: str, midi_file: str):
+    live_set = models.LiveSet(als_file)
+    midi_export(live_set, midi_file, separate_channels=True)
