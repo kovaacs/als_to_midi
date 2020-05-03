@@ -333,7 +333,7 @@ class LiveSet:
         self.tempo_map = self.get_tempo_map()
         self.tracks = self.parse_tracks()
         print(len(self.tracks), "Midi Tracks found")
-        print('Tempo Map', self.tempo_map)
+        # print('Tempo Map', self.tempo_map)
         print('LiveSet Parse Done')
 
     def parse_tracks(self) -> List[MidiTrack]:
